@@ -1,0 +1,29 @@
+{
+  "name": "toolker",
+  "version": "1.0.0",
+  "description": "Free, secure online PDF and image tools in your browser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkansagir/toolker.git"
+  },
+  "keywords": [
+    "pdf",
+    "image",
+    "tools",
+    "converter",
+    "toolker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furkansagir/toolker/issues"
+  },
+  "homepage": "https://github.com/furkansagir/toolker#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
