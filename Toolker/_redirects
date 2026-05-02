@@ -1,0 +1,3 @@
+# Netlify / Cloudflare Pages: send apex domain to canonical www (matches site canonical URLs)
+https://toolker.com/*  https://www.toolker.com/:splat  301!
+http://toolker.com/*   https://www.toolker.com/:splat  301!

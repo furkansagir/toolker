@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "toolker.com" }],
+      "destination": "https://www.toolker.com/:path*",
+      "permanent": true
+    }
+  ]
+}

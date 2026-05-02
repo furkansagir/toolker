@@ -1,0 +1,8 @@
+# Apache (optional): HTTPS + apex → www.toolker.com (matches canonical URLs in HTML)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^toolker\.com$ [NC]
+  RewriteRule ^ https://www.toolker.com%{REQUEST_URI} [L,R=301]
+</IfModule>

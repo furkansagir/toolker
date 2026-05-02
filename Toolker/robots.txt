@@ -1,0 +1,5 @@
+# https://www.toolker.com/
+User-agent: *
+Allow: /
+
+Sitemap: https://www.toolker.com/sitemap.xml
