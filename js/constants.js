@@ -123,7 +123,18 @@ export const TOOL_CONFIG = {
       { icon: "📐", title: "SVG export", text: "Create vector SVG output from your image when you need scalable graphics." },
       { icon: "⚡", title: "Quick convert", text: "Choose formats, convert once, and download immediately." }
     ],
-    related: ["image-compress", "image-resize"]
+    related: ["image-compress", "image-resize", "svg-to-3d"]
+  },
+  "svg-to-3d": {
+    title: "SVG to 3D",
+    h1: "SVG to 3D Online Free",
+    desc: "Upload an SVG and explore an extruded 3D preview in your browser. Tune depth, smoothness, colors, and material presets with WebGL—free to use and files are not stored after processing.",
+    features: [
+      { icon: "📐", title: "Path extrusion", text: "Filled paths and strokes become 3D geometry you can orbit and zoom." },
+      { icon: "🎨", title: "Material presets", text: "Switch between plastic, metal, glass-style, gold, and more for quick looks." },
+      { icon: "🖥️", title: "Runs locally", text: "Three.js renders in your browser; nothing is uploaded for conversion." }
+    ],
+    related: ["image-converter", "image-compress", "image-resize"]
   },
   "pdf-rotate": {
     title: "PDF Rotate",
@@ -167,7 +178,7 @@ export const TOOL_CONFIG = {
       { icon: "🖼️", title: "JPG Output", text: "Optimized for sharing and previews." },
       { icon: "⚡", title: "Quick Processing", text: "Works directly in browser." }
     ],
-    related: ["jpg-to-pdf", "image-converter"]
+    related: ["jpg-to-pdf", "image-converter", "compress-pdf"]
   },
   "word-to-pdf": {
     title: "Word to PDF",
@@ -248,7 +259,7 @@ export const TOOL_CONFIG = {
     ],
     related: ["qr-code-generator", "age-calculator", "calculator"],
     example: "Choose any two currencies, enter an amount, and get an instant live conversion."
-  }
+  },
 };
 
 export const TOOL_ROUTES = {
@@ -260,6 +271,7 @@ export const TOOL_ROUTES = {
   "image-compress": "/image-tools/image-compress/",
   "image-resize": "/image-tools/image-resize/",
   "image-converter": "/image-tools/image-converter/",
+  "svg-to-3d": "/image-tools/svg-to-3d/",
   "qr-code-generator": "/generator-tools/qr-code-generator/",
   "password-generator": "/generator-tools/password-generator/",
   "word-counter": "/text-tools/word-counter/"
@@ -297,6 +309,7 @@ export const TOOL_ICONS = {
   "image resize": "📐",
   "image crop": "✂️",
   "image converter": "🔁",
+  "svg to 3d": "📦",
   "qr generator": "🔳",
   "qr code generator": "🔳",
   "password generator": "🔐",

@@ -79,6 +79,10 @@ function routeTool(slug) {
   if (slug === "case-converter") return toolCaseConverter();
   if (slug === "slug-generator") return toolSlugGenerator();
   if (slug === "image-converter") return toolImageConverter();
+  if (slug === "svg-to-3d") {
+    void import("./js/svg-to-3d.js").then((m) => m.mountSvgTo3dTool());
+    return;
+  }
 }
 
 function renderToolMeta(slug) {
@@ -98,7 +102,7 @@ function renderToolMeta(slug) {
     .join("");
   const exampleText = conf.example || `Example: Upload your file, configure ${conf.title.toLowerCase()} options, and download the result.`;
   const relatedBlock =
-    slug === "merge-pdf" || slug === "compress-pdf" || slug === "jpg-to-pdf" || slug === "split-pdf" || slug === "pdf-rotate" || slug === "pdf-delete-pages" || slug === "pdf-watermark" || slug === "pdf-to-jpg" || slug === "pdf-to-word" || slug === "word-to-pdf" || slug === "image-compress" || slug === "image-resize" || slug === "image-crop" || slug === "image-converter" || slug === "qr-code-generator" || slug === "password-generator" || slug === "age-calculator" || slug === "calculator" || slug === "currency-converter" || slug === "word-counter" || slug === "case-converter" || slug === "slug-generator"
+    slug === "merge-pdf" || slug === "compress-pdf" || slug === "jpg-to-pdf" || slug === "split-pdf" || slug === "pdf-rotate" || slug === "pdf-delete-pages" || slug === "pdf-watermark" || slug === "pdf-to-jpg" || slug === "pdf-to-word" || slug === "word-to-pdf" || slug === "image-compress" || slug === "image-resize" || slug === "image-crop" || slug === "image-converter" || slug === "svg-to-3d" || slug === "qr-code-generator" || slug === "password-generator" || slug === "age-calculator" || slug === "calculator" || slug === "currency-converter" || slug === "word-counter" || slug === "case-converter" || slug === "slug-generator"
       ? ""
       : `<section class="meta-block">
       <h2>Related Tools</h2>

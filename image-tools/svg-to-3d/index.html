@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required so Three.js "examples/jsm" modules can resolve bare `from 'three'` (same pattern as threejs.org CDN + importmap). -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CV3GNL5H07"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CV3GNL5H07');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Toolker favicons -->
+  <link rel="icon" href="../../assets/branding/favicon.ico" sizes="any">
+  <link rel="icon" href="../../assets/branding/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../../assets/branding/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="../../assets/branding/apple-touch-icon.png" sizes="180x180">
+  <title>SVG to 3D Online Free – Extrude &amp; Preview in Browser | Toolker</title>
+  <meta name="description" content="Turn SVG vector paths into an interactive 3D extrusion preview in your browser. Adjust depth, smoothness, and materials—free, private, no file storage after you leave the page.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.toolker.com/image-tools/svg-to-3d/">
+  <meta property="og:title" content="SVG to 3D Online Free – Extrude &amp; Preview in Browser | Toolker">
+  <meta property="og:description" content="Turn SVG vector paths into an interactive 3D extrusion preview in your browser. Adjust depth, smoothness, and materials—free, private, no file storage after you leave the page.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.toolker.com/image-tools/svg-to-3d/">
+  <meta property="og:site_name" content="Toolker">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.toolker.com/assets/branding/toolker-footer.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SVG to 3D Online Free – Extrude &amp; Preview in Browser | Toolker">
+  <meta name="twitter:description" content="Turn SVG vector paths into an interactive 3D extrusion preview in your browser. Adjust depth, smoothness, and materials—free, private, no file storage after you leave the page.">
+  <meta name="twitter:image" content="https://www.toolker.com/assets/branding/toolker-footer.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.toolker.com/image-tools/svg-to-3d/#webpage","url":"https://www.toolker.com/image-tools/svg-to-3d/","name":"SVG to 3D Online Free – Extrude & Preview in Browser | Toolker","description":"Turn SVG vector paths into an interactive 3D extrusion preview in your browser. Adjust depth, smoothness, and materials—free, private, no file storage after you leave the page.","isPartOf":{"@type":"WebSite","name":"Toolker","url":"https://www.toolker.com/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.toolker.com/"},{"@type":"ListItem","position":2,"name":"Image tools","item":"https://www.toolker.com/image-tools/"},{"@type":"ListItem","position":3,"name":"SVG to 3D Online Free – Extrude & Preview in Browser","item":"https://www.toolker.com/image-tools/svg-to-3d/"}]}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body data-tool="svg-to-3d">
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="../../"><span class="brand-mark">TK</span><span>Toolker</span></a>
+      <button id="themeToggle" class="btn btn-ghost" type="button">🌙 Dark</button>
+    </div>
+    <div class="container"><a class="back-link" href="../">← Back to Image tools</a></div>
+  </header>
+  <main class="container main-content">
+    <section class="tool-panel">
+      <h1 id="panelTitle">SVG to 3D Online Free</h1>
+      <p id="panelDescription"></p>
+      <div id="toolWorkspace"></div>
+      <section class="meta-block">
+        <h2>Related Tools</h2>
+        <p class="muted">
+          Pair this preview with raster conversion, compression, and export workflows for logos and UI assets.
+        </p>
+        <div class="chip-row">
+          <a class="tool-link-chip" href="../image-converter/">Image Converter</a>
+          <a class="tool-link-chip" href="../image-compress/">Image Compress</a>
+          <a class="tool-link-chip" href="../image-resize/">Image Resize</a>
+          <a class="tool-link-chip" href="../../pdf-tools/jpg-to-pdf/">JPG to PDF</a>
+        </div>
+      </section>
+      <div id="result" class="result"></div>
+    </section>
+
+    <section class="card how-card">
+      <h2>How to Use SVG to 3D</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">↑</span><span>1. Upload an SVG</span></div>
+          <p>Choose a vector file with paths—icons and logos usually work best.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">🧊</span><span>2. Tune depth &amp; material</span></div>
+          <p>Use depth and smoothness sliders, then pick a material preset and color.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">🖱️</span><span>3. Explore in 3D</span></div>
+          <p>Drag to orbit and scroll to zoom. Optional slow spin highlights the extrusion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card how-card">
+      <h2>When SVG to 3D Helps</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">📐</span><span>Logos &amp; icons</span></div>
+          <p>Visualize how flat brand marks read with thickness before production.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">🎨</span><span>Quick material tests</span></div>
+          <p>Preview plastic, metal, glass-style shading on the same geometry.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">✓</span><span>Browser-only</span></div>
+          <p>Rendering runs locally; files are not stored after processing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card how-card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">?</span><span>Does this export a 3D model file?</span></div>
+          <p>This page is a live WebGL preview for exploration. Downloadable mesh export is not included yet.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">?</span><span>Why does my SVG look empty?</span></div>
+          <p>Very complex paths, embedded raster images only, or missing fills may not extrude. Try a simpler icon SVG.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">?</span><span>Is my SVG uploaded to a server?</span></div>
+          <p>No. The SVG is read in your browser and processed with WebGL; it is not stored by Toolker.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-title"><span class="process-icon">?</span><span>What powers the 3D pipeline?</span></div>
+          <p>Three.js extrusion from SVG paths. Geometry concepts are adapted from the MIT-licensed 3dsvg project—see NOTICE in the repository.</p>
+        </article>
+      </div>
+      <p class="muted" style="margin-top:0.65rem;"><a class="back-link" href="../../faq/">More questions</a></p>
+    </section>
+  </main>
+  <script src="../../app.js" type="module"></script>
+</body>
+</html>
